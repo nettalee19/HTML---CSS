@@ -1,0 +1,83 @@
+ * {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  body{
+  /* font-family: "Sofia", sans-serif;
+  color: blueviolet; */
+    border: 1px black;
+}   
+
+.container{
+  max-width: 960px;
+  margin: 30px auto;
+}
+
+ header{
+  max-width: 850px;
+  height: 70px;
+  background-color:cadetblue;
+  border: 3px black;
+   padding: 20px; 
+   margin-bottom: 15px;
+  align-self: center; 
+}
+
+main{
+  max-width: 550px;
+  height: 70px;
+  background-color: purple;
+  border: 3px black;
+  padding: 20px;
+  margin-bottom: 15px;
+  align-self: center;
+}
+
+
+aside {
+  width: 40%;
+  padding-left: 25px;
+  margin-left: 25px;
+  float: right;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+footer{
+  color: aqua;
+  background-color: blue;
+  max-width: 550px;
+  height: 70px;
+  border: 3px black;
+  padding: 20px;
+  margin-bottom: 15px;
+  align-self: center;
+} */
+
+
+
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  /* transition: 0.3s;
+  width: 200px;
+  background-color: blueviolet;
+  color: black; */
+/* } */ 
+
+/* article{
+  width= 300px;
+  padding: 20px;
+} */
+
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+
+/* .container {
+  padding: 2px 16px;
+} */
