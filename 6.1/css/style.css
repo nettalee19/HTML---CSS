@@ -1,0 +1,19 @@
+
+#hello1{
+  border: 1.5px solid red;
+  border-radius: 25px;
+  font-size: 22px;
+  
+}
+
+#hello2{
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#hello3{
+  box-shadow: 0 0 6px violet;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
