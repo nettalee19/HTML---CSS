@@ -1,0 +1,95 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* background: rgba(0, 0, 0, 0.274); */
+}
+
+.model3{
+  background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop');
+  width: 100vw;
+  height: 100vh; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* position: relative; */
+  /* position: absolute;
+  clip: rect(0, 100px, 200px, 0); */
+  
+}
+
+#navbar{
+  color: white;
+  overflow:auto; 
+  /* backround shows no matter what */
+}
+
+#navbar img{
+  width: 10%;
+  height: auto;
+  padding: 15px 15px;
+}
+
+#navbar a{
+  color: white;
+  text-decoration: none;
+} 
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li{
+  float: left;
+  font-family: gothem;
+}
+
+#navbar ul li a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+#navbar_two{
+  color: white;
+  overflow:auto; 
+  /* backround shows no matter what */
+}
+
+#navbar_two a{
+  color: white;
+  text-decoration: none;
+}
+
+#navbar_two ul {
+  list-style: none;
+  float: left;
+}
+
+#navbar_two ul li{
+  /* float: left; */
+  margin: 100px 0 0 10px;
+  padding: auto ; 
+  line-height: 1em;
+  /* padding-top: 100px; */
+} 
+
+#navbar ul li a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+#showcase{
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  /* height: 500px; */
+  padding-top:50px;
+}
