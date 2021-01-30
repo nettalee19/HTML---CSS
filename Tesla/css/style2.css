@@ -1,0 +1,91 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body{
+  
+} */
+.container {
+  scroll-snap-type: y mandatory;
+}
+
+.child{
+  scroll-snap-align: start;
+}
+
+
+
+@font-face{
+  font-family: 'Gotham Medium Regular';
+  src: url(/Tesla/fonts/Gotham\ Medium\ Regular.ttf);
+  font-style:normal;
+  font-weight: 500;
+
+}
+
+
+@font-face{
+  font-family: 'Gotham Book';
+  src: url(/Tesla/fonts/Gotham\Book.ttf);
+  font-style:normal;
+  font-weight: 400;
+
+}
+
+@font-face{
+  font-family: 'Gotham Light';
+  src: url(/Tesla/fonts/Gotham\Light.ttf);
+  font-style:normal;
+  font-weight: 500;
+
+}
+#model3{
+  background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop');
+  width: 100vw;
+  height: 100vh; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#navbar{
+  color: :#ffffff;
+  overflow:auto; 
+}
+
+#navbar img{
+  width: 10%;
+  height: auto;
+  padding: 15px 15px;
+}
+
+#navbar a{
+  color:#ffffff;
+  text-decoration: none;
+} 
+
+#navbar ul {
+  
+  list-style: none;
+  float:right;
+  margin-right: 60vh;
+  margin-top: 1vh;
+}
+
+#navbar ul li{
+  float: left;
+  font-family: 'Gotham Medium Regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#navbar ul li a{
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
