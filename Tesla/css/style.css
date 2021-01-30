@@ -17,6 +17,23 @@ body{
 
 }
 
+
+@font-face{
+  font-family: 'Gotham Book';
+  src: url(/Tesla/fonts/Gotham\ Book.ttf);
+  font-style:normal;
+  font-weight: 400;
+
+}
+
+@font-face{
+  font-family: 'Gotham Light';
+  src: url(/Tesla/fonts/Gotham\ Light.ttf);
+  font-style:normal;
+  font-weight: 500;
+
+}
+
 .model3{
   background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop');
   width: 100vw;
@@ -26,6 +43,10 @@ body{
   /* position: relative; */
   /* position: absolute;
   clip: rect(0, 100px, 200px, 0); */
+  background-position: center center;
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
   
 }
 
@@ -219,7 +240,7 @@ body{
   color: black;
 }
 
-.box a:hover{
+.box btn:hover{
   background: white;
   color: black;
 }
@@ -252,10 +273,82 @@ body{
 .safty{
   background:grey;
   font-family: 'Gotham Medium Regular';
+  font-weight: 500;
+  /* font-size: 12px;
+  line-height: 14px */
+}
+
+#safty-info{
+  text-align: left;
+  padding-left: 2vh;
+}
+
+#safty-info .safty-img{
+  font-family: 'Gotham Medium Regular';
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px
+  line-height: 14px;
+  text-align: left;
+  padding-left: 20vh;
+  float: left;
+  width:50%;
+  background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/e9831dc9-9dec-47b6-a478-d7c35b335c5a/bvlatuR/std/800x950/model-_3_safety_hero_mobile') no-repeat;
+  min-height: 100%;
 }
+
+#safty-info .info-content{
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#safty-info .info-content p{
+  width: 300px;
+  padding: 10px;
+}
+
+#safty-info .info-content h3{
+  width: 300px;
+  padding: 5px;
+}
+
+#safty-info .info-content h1{
+  width: 300px;
+  padding: 10px;
+}
+
+#safty-info li{
+  display: inline-block;
+}
+
+#safty-info li a {
+  padding-right: 30px;
+  color: white;
+  text-decoration: none;
+  border: white 2px solid;
+  border-radius: 30px;
+  padding: 5px 35px;
+  /*position: absolute;
+  top:79vh */
+}
+
+#safty-info li a:hover{
+  background: white;
+  color: black;
+}
+
+/*.safty-info btn:hover{
+  background: white;
+  color: black;
+} */
+
+
+
+
+
 
 .showcase_safty{
   text-align: left;
@@ -286,11 +379,16 @@ body{
   /* background: tomato; */
 }
 
-#performance_fetures {
+.performance_fetures {
   margin-bottom: 50vh;
-  height: 50vh;
-  padding: 150px; 
-  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/f6127f2a-0895-4dbe-9850-eeaa8645997f/bvlatuR/std/800x1700/model-3-hero-mobile");
+  height: 54vh;
+  /* padding: 150px;  */
+  background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop");
+  /* background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/f67ed6c1-4983-4f6b-b9f0-7294ca2d2333/bvlatuR/std/960x1130/lhd-performance-hero-mobile"); */
+  background-position: center center;
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
 
 #performance_fetures i{
@@ -303,3 +401,178 @@ body{
   padding: 150px;
   
 } */
+
+
+#performance ul {
+  list-style: none;
+  float:right;
+  margin-right: 13vh;
+  margin-top: 24vh;
+}
+
+#performance li{
+  display: inline-block;
+  padding: 30px;
+  text-align: left;
+  font-family: 'Gotham Medium Regular';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+  /* position: absolute;
+  top:20px; */
+  
+}
+#performance li .right{
+  border-right: 1px solid;
+  border-collapse: separate;
+  padding-right: 2vw;
+}
+
+#performance li p{
+  
+  width: 24vw;
+}
+
+/* #features li .big{
+  font-weight: 500;
+  font-size: 28px;
+}
+
+#features li .small{
+  font-weight: 400;
+  font-size: 12px;
+} */
+
+.box{
+  float: left;
+  width:25%;
+  /* padding: 50px; */
+  padding-bottom: 10%;
+  text-align: center;
+  color: white;
+  font-family: 'Gotham Medium Regular';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.big{
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.small{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* .box i{
+  margin-bottom: 10px;
+} */
+
+#performance{
+  /* display: inline; */
+  background: rgb(255, 255, 255);
+  
+}
+
+/* #performance_bottom{
+  height: 20vh;
+} */
+
+#performance_bottom .left-content{
+  float: left;
+  width:50%;
+  /* min-height: 100%; */
+  /* margin-bottom: 10vh; */
+  /* padding-left: 12vw; */
+  /* position: absolute;
+  bottom: 100px; */
+  position:relative; 
+  left:12vw; 
+  bottom:40vh;
+ 
+  
+}
+
+#performance_bottom .left-content h3{
+  font-family: 'Gotham Light';
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  color: #171a20;
+  /* font-weight: lighter; */
+}
+
+#performance_bottom .left-content h1{
+  font-family: 'Gotham Medium Regular';
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #171a20;
+  /* font-weight: lighter; */
+}
+
+/* #performance_bottom ul{
+  margin-right: 50px;
+} */
+
+
+#performance_bottom li{
+  padding-left: 10px;
+  
+}
+
+
+
+#performance_bottom .btn{
+  padding-right: 30px;
+  color: #171a20;
+  text-decoration: none;
+  border:#171a20 2px solid;
+  border-radius: 30px;
+  padding: 8px 30px;
+  /*position: absolute;
+  top:79vh */
+  position:relative; 
+  right:15vw; 
+  bottom:25vh;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+#performance_bottom .btn:hover{
+  color: white;
+  background: black;
+}
+
+
+
+
+
+
+
+
+
+#performance_bottom .right-content{
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  padding: 50px 30px;
+  /* overflow: hidden; */
+  position:relative; 
+  right:12vw; 
+  bottom:48vh;
+  font-family: 'Gotham Regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #393c41;
+}
+
+#performance_bottom .right-content p{
+  width: 37vw;
+  padding: 10px;
+}
