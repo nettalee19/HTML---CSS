@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #fffa9d;
+  
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  
+  justify-content: flex-start;
+  
+}
+
+.flex-container > div {
+
+  width: 300px;
+  text-align: center;
+  line-height: 75px;
+ 
+  
+}
+
+ .item{
+  
+  margin-right: 300px; 
+} 
+
+
+.item-1{
+  background: green;
+  
+}
+.item-2{
+  background:lightskyblue;
+  
+}
+.item-3{
+  background:tomato;
+  
+}

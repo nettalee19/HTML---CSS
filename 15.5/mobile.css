@@ -1,0 +1,23 @@
+@media(max-width: 500px){
+  .nav_menu{
+    width: 100%;
+  }
+} 
+
+/* @media(max-width: 600px){
+  body{
+    
+    
+  }
+
+  main{
+    width: 100%;
+  }
+
+
+  aside{
+    display: none;
+    
+  }
+}  */
+ 

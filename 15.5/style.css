@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #e0fffb;
+  font-family: "Sofia", sans-serif;
+  color: #008698;
+  line-height: 1.4em;
+  
+}
+
+.nav_menu{
+  background: #29cdb5;
+  font-family: "Trirong", serif;;
+  list-style: none;
+  color: black;
+  /* border: 2px black solid; */
+  border-radius: 10px;
+  width: 100%;
+  height:auto;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.nav_menu li{
+  float: left;
+}
+
+.nav_menu li:last-child{
+  border:none;
+}
+
+.nav_menu li a{
+  display: block;
+  color:rgb(2, 31, 54);
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.nav_menu li a:hover{
+  color:rgb(44, 83, 116);
+  background: rgb(63, 106, 107);
+}
+
+.container{
+  margin: auto;
+  max-width: 850px; 
+}
+
+header{
+  text-align: center;
+  font-size: 4vw;
+  text-shadow: 2px 2px black;
+}
+
+aside {
+  width: 25%;
+  padding-left: 25px;
+  margin-left: 20%;
+  float: right;
+  /* font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+main{
+  padding: 1%;
+  margin-right: 25%;
+  background: #29cdb5;
+  float:inherit;
+  font-size: 2vw;
+  font-family: sans-serif;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  transition: 0.3s;
+  width: 250px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.btn{
+  background: #f39c9c;
+  color:rgba(0, 0, 0, 0.514);
+  border: 0;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-family: fantasy;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn:hover{
+  
+  background: deeppink;
+  color:black;
+}
+
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+
+/* .container {
+  padding: 2px 16px;
+} */
+
+li{
+  display: inline;
+  padding-right: 30px;
+  
+}
+
+li a{
+  text-decoration: none;
+  color: #008698;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+li a:hover{
+  text-decoration: none;
+  color: #0086988a;
+}
+
+footer{
+  color:black;
+  text-align: center;
+  background: #29cdb5;
+  color: white;
+  padding: 20px;
+}
