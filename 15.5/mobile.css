@@ -1,23 +1,14 @@
 @media(max-width: 500px){
-  .nav_menu{
-    width: 100%;
+  .flex-container{
+  
+    display: flex;
+    flex-direction: column;
+    /* width: 15vw; */
+    align-items: center;
+    height: 50vh;
+    justify-content: flex-start;
+    
   }
 } 
 
-/* @media(max-width: 600px){
-  body{
-    
-    
-  }
-
-  main{
-    width: 100%;
-  }
-
-
-  aside{
-    display: none;
-    
-  }
-}  */
  

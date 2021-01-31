@@ -12,16 +12,18 @@ body{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
   
-  justify-content: flex-start;
+  
   
 }
 
 .flex-container > div {
 
-  width: 300px;
+  width: 100px;
+  height: 100px;
   text-align: center;
-  line-height: 75px;
+  
  
   
 }
