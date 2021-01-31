@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #e0fffb;
+  font-size: 20px;
+  /* display: inline-block; */
+}
+
+.clr{
+  clear:both;
+}
+
+main{
+  width: 300px;
+  /* padding: 10px; */
+  border: palevioletred 2px solid;
+  display: table-cell;
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  
+}
+
+aside{
+  padding: 10px;
+  border: palevioletred 2px solid;
+  float: right;
+  width: 40%;
+  height: 100%;
+}
+
+footer{
+  text-align: center;
+  background: #008698;
+  color: white;
+  padding: 20px;
+}
+
