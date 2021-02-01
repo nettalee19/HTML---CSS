@@ -1,0 +1,10 @@
+.is-required:after{
+  content: '(http://www.appleseeds.org.il)';
+  color: blueviolet;
+  
+}
+
+a{
+  color: blueviolet;
+  text-decoration: none;
+}
