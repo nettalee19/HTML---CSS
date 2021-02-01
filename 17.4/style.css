@@ -1,0 +1,65 @@
+
+.element {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  border: tomato 2px solid;
+}
+
+.element::after{
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: -4px;
+  height: 50%;
+  width: 100%;
+  border: 4px solid;
+  border-color: white;
+  z-index: 20;
+  
+}
+
+
+
+.element::before{
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: 25%;
+  height: 100%;
+  width: 50%;
+  border: 4px solid;
+  border-color: white;
+  z-index: 20;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
