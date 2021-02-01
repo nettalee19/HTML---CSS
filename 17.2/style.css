@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.square{
+  width:200px;
+  height: 200px;
+  background-color: cadetblue;
+}
+
+.square:before{
+  content: '';
+  width:100px;
+  height: 200px;
+  background-color:tomato;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
