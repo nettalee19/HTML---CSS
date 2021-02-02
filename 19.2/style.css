@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.box{
+  width: 200px;
+  height:200px;
+  background: plum;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  
+}
+
+.box:before{
+  content: '';
+  width: 200px;
+  height: 200px;
+  background: powderblue;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  z-index: 10;
+  
+}
+
+
+.box:hover:before{
+  animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  /* animation-fill-mode: backwards; */
+}
+
+
+
+@keyframes anim{
+  from{
+    top:0;
+    left: -200px;
+    background: powderblue;
+  }
+  to{
+    top:0;
+    left: 0;
+    background: peru;
+  }
+}
+
+/* 
+.box:before{
+  content: '';
+  width: 200px;
+  height: 200px;
+  background:powderblue;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  z-index: 10;
+}
+
+.box:hover:before{
+  content: '';
+  width: 200px;
+  height: 200px;
+  background:orange;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  z-index: 10;
+} */
+
+
+/* .box:hover:after{
+  animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+
+
+    content: '';
+  width: 200px;
+  height: 200px;
+  background: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;  
+}  */
+
+/* .box:hover:before{
+  content: '';
+  width: 200px;
+  height: 200px;
+  background: orchid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  
+}  */
