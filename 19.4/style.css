@@ -1,0 +1,71 @@
+ ul {
+  background: powderblue; 
+  
+} 
+
+ li {
+  float: left;
+  position: relative;
+  font-size: 20px;
+  padding: 10px;
+} 
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav li {
+  position: relative;
+}
+
+
+
+ul.nav {
+  
+  list-style: none;
+  position: fixed;
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 5px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: rgb(184, 13, 155);
+  transition: width 0.5s ease-in-out;
+  
+}
+
+.nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+.nav a::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top:0;
+  width: 0; 
+  height: 7px;
+  display: block;
+  
+  background: rgb(25, 142, 189);
+  transition: width 0.5s ease-in-out;
+  
+}
+
+.nav a:hover::before {
+  width: 100%;
+  right: 0;
+}
