@@ -2,7 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+/* 
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
 
 
 .box{
@@ -33,7 +41,8 @@
   animation-duration: 3s;
   animation-iteration-count: 2;
   /* animation-fill-mode: backwards; */
-}
+  /* animation-direction: alternate-reverse ;*/
+} 
 
 
 
