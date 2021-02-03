@@ -16,7 +16,7 @@
 }
 
 .item:hover{
-  opacity: 0.8;
+  opacity: 0.5;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
