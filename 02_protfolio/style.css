@@ -4,7 +4,7 @@
   --light-color: #6c5b7b ;
   --dark-color: #355c7d ;
   --max-width: 1100px;
-  --grey-color:#EEEEEE;
+  --grey-color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -15,11 +15,13 @@
 }
 
  body{
+
   font-family: 'Open Sans', sans-serif;
   background: #fff;
   color: #333;
   line-height: 1.6;
   position: relative;
+  background: url('/img/pexels-miguel-á-padriñán-255379.jpg') no-repeat center center/cover;
 } 
 
 header{
@@ -110,10 +112,44 @@ header img:hover{
 
  #welcome{
   height: 100vh;
+  width: 100vw;
+  background: url('/img/pexels-miguel-á-padriñán-255379.jpg') no-repeat center center/cover;
 } 
 
+.welcome {
+  /* display: flex;
+  align-items:  center;
+  justify-content: space-between;
+  text-align: center;  */
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-top:170px;
+  text-align:center;
+  
+  /* border: 16px solid #d6689654; 
+  border-top: 16px solid #e91a7b; 
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; */
+  animation: enter 3s linear infinite;
+}
 
+/* .welcome:hover{
+  transform: rotate(25deg);
+} */
 
+/* .welcome::before{
+
+} */
+
+@keyframes enter {
+  0% { transform:scale(1) }
+  100% { transform: scale(1.1) }
+}
+
+/* .circle{
+
+} */
 
 
 
@@ -173,24 +209,24 @@ header img:hover{
   
 }
 
-.btn::before{
+.btn::before{ /*these are the button's animation properties. */
   content: '';
-  position: absolute;
+  position: absolute; /*the btn positioned relative and so the before is absolute to be on top of it*/
   top:0;
   left:0;
   bottom:0;
   right:0;
-  z-index: 20;
-  background: var(--light-color);
+  z-index: 20; 
+  background: var(--secondary-color);
   opacity: 0.7;
 
   transition: transform 0.5s ease-in-out;
-  transform: scaleY(0);
-  transform-origin: right;
+  transform: scaleY(0); /*starts from the middle of the button*/
+  /* transform-origin: right; */
 }
 
 .btn:hover:before{
-  transform: scaleY(0.5);
+  transform: scaleY(1); /*reaches the top and bottom of the button*/
   
 }
 
@@ -200,18 +236,20 @@ header img:hover{
 }
 
 #more_info{
-  height: 100vh;
+  height: 60vh;
+  
 }
 
 .more_info_left{
   background: var(--grey-color);
-  padding: 70px;
-  padding-left: 10%;
+  padding: 50px;
+  padding-left: 8%;
   margin: 20px;
-  width: 45%;
-  height: 55%;
+  width: 45vw;
+  height: 50vh;
   text-align: left;
   float: left;
+  /* position: relative; */
 }
 .more_info_left h1{
   
@@ -225,14 +263,59 @@ header img:hover{
 
 }
 
+ .anim{
+  position: relative;
+} 
+
+.anim::after {/*this sets the underline properties and where it starts*/
+  content: '';
+  position: absolute;
+  /* top:0;
+  left:0; */
+  width: 0;  
+  height: 2px;
+   display: block;
+  /*margin-top: 5px; 
+  left: 0;*/
+  background: var(--primary-color);
+  transition: width 0.5s ease-in-out;
+  
+}
+
+.anim:hover:after { /*the underline arrives till the end of the heading*/
+  width: 100%;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .more_info_right{
   background: var(--grey-color);
   padding: 30px;
   margin: 20px;
-  width: 45%;
-  height: 55%;
+  width: 45vw;
+  height: 50vh;
   text-align: left;
   float: right;
+  
 }
 
 .right{
@@ -240,16 +323,55 @@ header img:hover{
   align-items: center; */
 }
 
+.animation{
+  width: 70px;
+  height: 70px;
+  background: var(--light-color); 
+  border-radius: 70px;
+  border: 2px black dotted;
+  /* box-shadow: 10px 10px 0 0  var(--dark-color); */
+  animation: roll 15s linear infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  
+  /* background: url('/img/pexels-satoshi-hirayama-2070033.jpg') no-repeat center center/cover; */
+}
+
+/* .animation:hover{
+  box-shadow: none;
+} */
+
+@keyframes roll {
+  0% { transform:rotate(0deg); 
+    top:0;
+    left:0; 
+  }
+
+  /* 50% { transform: rotate(360deg);
+    top:0;
+    left: 150px; 
+    background: yellowgreen; 
+  } */
+
+  100% { transform: rotate(360deg);
+    top:0;
+    left: 90vw; 
+    background: var(--primary-color); 
+  }
+}
 
 
-/* #recommandtions{
-  padding: 30px;
+ #recommandtions{
+  
+  /* padding: 30px;
   display: flex;
   align-items:  center;
   justify-content: space-between; 
   text-align: center;
-  background: var(--grey-color);
-} */
+  background: var(--grey-color); */
+} 
 
 .recommendations_types{
   display: flex;
@@ -299,6 +421,89 @@ header img:hover{
   transform: Scale(1.1);
 }
 
+#contact{
+  background: var(--grey-color);
+}
+
+#contact h1{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+
+
+#contact-form{
+  padding: 30px 30px;
+  background: url('/img/pexels-miguel-á-padriñán-255379.jpg') no-repeat center center/cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#contact-form .form-group{
+  margin-bottom: 20px;
+  
+}
+
+#contact-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 50%;
+  padding:10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height:200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #444;
+}
+
+.btn_contact{
+  position: relative;
+  z-index: 10;
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: #333;
+  
+}
+
+.btn_contact::before{ /*these are the button's animation properties. */
+  content: '';
+  position: absolute; /*the btn positioned relative and so the before is absolute to be on top of it*/
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 20; 
+  background: var(--secondary-color);
+  opacity: 0.7;
+
+  transition: transform 0.5s ease-in-out;
+  transform: scaleY(0); /*starts from the middle of the button*/
+  /* transform-origin: right; */
+}
+
+.btn_contact:hover:before{
+  transform: scaleY(1); /*reaches the top and bottom of the button*/
+  
+}
+
+
+
+
+
+
+
 
 footer{
   display:flex;
@@ -311,19 +516,25 @@ footer{
 
 .main-footer{
   text-align: center;
-  background: #444;
+  background: var(--dark-color);
   color: white;
   padding: 20px;
 }
 
- .footer a{
-  color: #fff;
+.main-footer a{
+  color: var(--primary-color);
+  font-size: 30px;
+  padding: 10px;
 }
 
-.footer a:hover{
-  color: #28a745;
+.main-footer a:hover{
+  color: var(--secondary-color);
 }
 
-.footer .social > *{
+
+
+
+
+/* .footer .social > *{
   margin-right: 30px;
-} 
+}  */

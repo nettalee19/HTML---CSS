@@ -1,0 +1,520 @@
+:root{
+  --nav-backround: rgba(51,51,51,0.8); 
+  --black-font:#1D1D1F;
+  --grey-font: #86868B;
+  --blue-font:#0066CC;
+  --grey-backround-main: #FBFBFD;
+  --blue-backround: #0071E3;
+  --grey-backroung-shop: #F5F5F7;
+
+}
+
+@font-face{
+  font-family: 'SFProText-Regular';
+  src: url(/Apple/FontsFree-Net-SFProText-Regular.ttf);
+  font-style:normal;
+  font-weight: 400;
+
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  position: relative;
+  font-family: 'SFProText-Regular';
+}
+
+/* .clr{
+  clear:both;
+} */
+
+.space{
+  height: 2vh;
+}
+
+header{
+  background: var(--nav-backround);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  /* opacity: 0.8; */
+}
+
+#main-nav ul {
+  list-style: none;  
+  /* padding: 10px; */
+}
+
+#main-nav li{
+  padding: 12px;
+  font-size: 16px;
+}
+
+#main-nav a{
+  text-decoration: none;
+  color: var(--grey-font);
+  position: relative;
+  top: 0;
+  transition: 0.5s;
+}
+#main-nav a:hover{
+  
+  color: #ffffff;
+  
+}
+
+
+/* #main-nav a::before{
+  content: '';
+  color: #1a1818;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  
+}
+#main-nav a:hover:before{
+  animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  
+}
+
+@keyframes anim{
+  from{
+    top:0;
+    left: -200px;
+    background: powderblue;
+  }
+  to{
+    top:0;
+    left: 0;
+    background: peru;
+  }
+} */
+
+/* #main-nav a:hover{
+  color: #ffffff;
+} */
+
+
+#main-nav ul{
+  /* display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  justify-content:space-around;
+  align-items: center; */
+  display: flex;
+  justify-content: center;
+  
+  /* grid-column-gap: 10px; */
+  /* grid-template-rows: 90px; */
+  background: var(--nav-backround);
+  
+} 
+#main-nav li{
+  /* padding: 10px; */
+  padding-left: 60px;
+} 
+
+#first .covid{
+  background: var(--blue-backround);
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  /* line-height: 44px; */
+}
+
+#first .covid a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#first .covid a:hover{
+  text-decoration: underline;
+}
+
+#first .covid i{
+  color: #ffffff;
+}
+
+#first .shop{
+  background: var(--grey-backroung-shop);
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* #first .shop{
+  background: var(--grey-backroung-shop);
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+} */
+
+#first .shop a{
+  color: var(--blue-font);
+  text-decoration: none;
+}
+
+#first .shop a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+/* #first a .first-main{
+  background: var(--grey-backround-main);
+  display: block;
+  height: 100px;
+} */
+
+ #first .first-main{
+  background: var(--grey-backround-main);
+  /* height: 200%; */
+  text-align: center;
+  padding-top: 30px; 
+  padding-bottom: 40px;
+  /* display: flex; */
+ }
+
+ /* #first-main .first-img-one {
+  max-width: 100%;  
+  height: auto; 
+ } */
+ 
+ 
+ /* .first-image-one{
+   width: 20px;
+   height: 20px;
+ }  */
+
+#first .first-main .main-btn{
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px; 
+  margin: 200px;
+  border-radius: 20px;
+  width: 100px;
+}
+#first .first-main .main-btn:hover{
+  text-decoration: underline;
+} 
+
+
+
+
+.no-underline:hover{
+  color: transparent;
+  text-decoration: none;
+  
+}
+
+/*second section*/
+#second{
+  background: var(--grey-backround-main);
+  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#second a{
+  text-decoration: none;
+  color: var(--black-font);
+  font-size: 17px;
+  line-height: 25px;
+  
+}
+
+#second a h1{
+  text-decoration: none;
+  font-size: 50px;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+#second a h3{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+#second a p{
+  text-decoration: none;
+  color: var(--grey-font);
+}
+
+#second a ul{
+  display: flex;
+  /* box-sizing: content-box; */
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content:space-between;
+  align-items: center; */
+  list-style: none;
+  margin-bottom: 120px;
+}
+
+#second a li{
+  color: var(--blue-font);
+  padding: 20px;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+#second a li:hover{
+  text-decoration: underline;
+}
+
+#second a i{
+  font-size: 14px;
+  line-height: 29px;
+}
+
+#second .photo{
+  color: transparent;
+  padding-top: 200px; 
+  width: 50vw;
+  height: 70px;
+  background: url('/Apple/iphone__cyamwsdph26a_large_2x.jpg') no-repeat center center / cover;
+  /* display: flex;
+  justify-content: space-around; */
+  /* display: grid; 
+  grid-template-columns:  50px  50px 50px;
+  grid-column-gap: 20px; */
+}
+
+
+/*third*/
+#third{
+  background: var(--grey-backround-main) no-repeat center center / cover; 
+  background: url('/Apple/ipad_snoopy__bge83mwgcaoi_large_2x.jpg') no-repeat center center / 100%  ; 
+  
+  text-align: center;
+  /* height: 900px; */
+   display: flex;
+  justify-content: center;
+  height: 90vh;
+  position: relative; */
+}
+
+#third a{
+  text-decoration: none;
+  color: var(--black-font);
+  font-size: 17px;
+  line-height: 25px;
+  
+}
+
+#third a h1{
+  text-decoration: none;
+  font-size: 50px;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+#third a h3{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+#third a ul{
+  display: flex;
+  /* box-sizing: content-box; */
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content:space-between;
+  align-items: center; */
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#third a li{
+  color: var(--blue-font);
+  padding: 20px;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+#third a li:hover{
+  text-decoration: underline;
+}
+
+#third a i{
+  font-size: 14px;
+  line-height: 29px;
+}
+
+
+ #third img{
+  color: transparent;
+  width: 600px;
+  /* position: absolute;
+  
+  left: 50vw; */
+  
+} 
+
+
+
+/*four*/
+#four{
+  /* background: var(--grey-backround-main); */
+  background: url('/Apple/homepod_snoopy__d3tmfyyxonu6_large_2x.jpg') no-repeat center center / 70%  ; 
+  text-align: center;
+  height: 90vh;
+}
+
+#four a{
+  background: var(--grey-backround-main);
+  text-decoration: none;
+  color: var(--black-font);
+  font-size: 17px;
+  line-height: 25px;
+  
+}
+
+#four .container{
+  padding-top: 400px;
+  padding-bottom: 30px;
+}
+
+#four a h1{
+  text-decoration: none;
+  font-size: 50px;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+#four a ul{
+  display: flex;
+  /* box-sizing: content-box; */
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content:space-between;
+  align-items: center; */
+  list-style: none;
+  
+}
+
+#four a li{
+  color: var(--blue-font);
+  padding: 20px;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+#four a li:hover{
+  text-decoration: underline;
+}
+
+#four a i{
+  font-size: 14px;
+  line-height: 29px;
+}
+
+#four img{
+  color: transparent;
+  width: 600px;
+}
+
+
+
+
+
+/*five*/
+#five{
+  /* background: url('tv4k_snoopy__esd65v7pg6ie_large_2x.jpg') no-repeat center center / cover; */
+  background: #000000;
+  height: 90vh;
+}
+
+/* #third{
+  background: var(--grey-backround-main) no-repeat center center / cover; 
+  background: url('/Apple/ipad_snoopy__bge83mwgcaoi_large_2x.jpg') no-repeat center center / 100%  ; 
+  
+  text-align: center;
+  /* height: 900px; */
+   display: flex;
+  justify-content: center;
+  height: 90vh;
+  position: relative; */
+} */
+
+#five a{
+  text-decoration: none;
+  color: var(--black-font);
+  font-size: 17px;
+  line-height: 25px;
+  
+}
+
+#five a h1{
+  text-decoration: none;
+  font-size: 50px;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+#five a h3{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+#five a ul{
+  display: flex;
+  /* box-sizing: content-box; */
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content:space-between;
+  align-items: center; */
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#five a li{
+  color: var(--blue-font);
+  padding: 20px;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+#five a li:hover{
+  text-decoration: underline;
+}
+
+#five a i{
+  font-size: 14px;
+  line-height: 29px;
+}
+
+
+ #third img{
+  color: transparent;
+  
+
+  /* position: absolute;
+  
+  left: 50vw; 
+   */
+} 

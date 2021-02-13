@@ -1,0 +1,26 @@
+@media(max-width: 500px){
+
+
+  #header_two .not-phone{
+    display: none;
+  }
+
+  .item .large-image{
+    width: 250px;
+    height: 310px;
+  }
+}
+
+
+ @media(min-width: 501px) and (max-width: 768px){
+
+
+  #header_two .not-tablet{
+    display: none;
+  }
+
+  .item .large-image{
+    width: 250px;
+    height: 310px;
+  }
+} 

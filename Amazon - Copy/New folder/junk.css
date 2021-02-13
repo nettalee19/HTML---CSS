@@ -1,0 +1,117 @@
+:root {
+  --navbar_black_backround: #131921;
+
+  --header_two_backround: #232F3E;
+  --navbar_black_yellow-button: #f7b867;
+  --navbar_black_yellow-button_hover: #F3A847;
+  --navbar_black_downarrow: #A7ACB2;
+  --navbar_black_grey-button:#ececec;
+  --navbar_black_grey-button_hover:#DADADA;
+  --navbar_black_cart_items_orange: #E68305;
+
+  --path_color: #565959;
+  --select_orange: #E77600;
+
+  --carousel_item_blue: #147C8F;
+  --carousel_item_orange: #C7511F;
+  
+  --red_font: #b12704;
+  --grey_heading: #565959;
+}
+
+@font-face{
+  font-family: 'Amazon Ember Rg';
+  src: url(/Amazon/AmazonEmber_Rg.ttf);
+  font-style:normal;
+  font-weight: 400;
+
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  position: relative;
+  font-family: 'Amazon Ember Rg';
+}
+
+
+header ul{
+  display: flex;
+  justify-content: space-around;
+  /* display: grid;
+  grid-template-columns: 9 1fr; */
+  padding-top: 10px;
+
+
+  list-style: none;
+  background: var(--navbar_black_backround);
+}
+
+header li{
+  padding: 10px;
+  color: #ffffff;
+  
+}
+
+.All_btn{
+  color: var(--navbar_black_downarrow);
+  /* padding-top: 20px; */
+  background: var(--navbar_black_grey-button);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  height: 40px;
+  font-size: 12px;
+  /* padding-top: 5px; */
+}
+.All_btn:hover{
+  color: var(--navbar_black_downarrow);
+  /* padding-top: 20px; */
+  background: var(--navbar_black_grey-button_hover);
+  color: #000000;
+}
+
+.All_btn_text{
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+
+.input_search{
+  height: 40px;
+  padding-left: 150px;
+  /* text-align: left; */
+}
+
+
+.search_btn{
+ 
+  /* padding-top: 20px; */
+  background: var(--navbar_black_yellow-button);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  height: 40px;
+}
+
+.search_btn_font{
+  color: #333333;
+}
+
+.search_btn:hover{
+ 
+  background: var(--navbar_black_yellow-button_hover);
+  
+}
+
+
+
+
+
+<ul class="search">
+        <a href="#" ><li class="All_btn"><span class="All_btn_text">All</span><i class="fas fa-sort-down arrow_down"></i></li></a>
+        <li><input type="search" class="input_search"></li>
+        <a href="#" class="search_btn"><li><i class="fas fa-search search_btn_font"></i></li></a></li>
+      </ul>

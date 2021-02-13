@@ -1,0 +1,291 @@
+@media(max-width: 600px){
+
+  body{
+    width: 100vw;
+  }
+  #main-nav .container{
+  
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: flex-start; */
+
+    /* display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 1; */
+    /* grid-column-gap: 10px;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    /* width: 15vw; */
+    align-items: center;
+    height: 50vh;
+    justify-content: flex-start;
+    height: 22vh;
+  }
+
+  #main-nav .container ul{
+    display: none;
+  }
+
+  /* .about .container{
+    padding: 30px;
+    display: flex;
+    align-items:  center;
+    justify-content: space-between; 
+    text-align: center;
+  } */
+
+  .about{
+    /* padding: 30px; */
+    display: grid;
+    grid-template-columns: 1;
+    align-items: center;
+    text-align: center;
+    background: var(--grey-color);
+    /* padding-top: 10px; */
+  }
+  .about__sections{
+    margin-bottom: 25px;
+  } 
+
+  .more_info_left{
+    background: var(--grey-color);
+    padding: 50px;
+    padding-left: 8%;
+    margin: 20px;
+    width: 90vw;
+    height: 50vh;
+    text-align: left;
+    float: left;
+    font-size: 12px;
+  }
+
+  .more_info_right{
+    display: none;
+  }
+
+  
+
+
+
+  #recommendations h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  #recommendations h3{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #recommendations p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .recommendations_types {
+    padding: 10px;
+    
+  }
+  .recommendations_types img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    
+  }
+
+} 
+
+
+@media(min-width: 601px) and (max-width: 768px){
+
+  body{
+    width: 100vw;
+  }
+  #main-nav .container{
+  
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: flex-start; */
+
+    /* display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 1; */
+    /* grid-column-gap: 10px;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    /* width: 15vw; */
+    align-items: center;
+    height: 50vh;
+    justify-content: flex-start;
+    height: 22vh;
+  }
+
+  #main-nav .container ul{
+    display: none;
+  }
+
+  .about{
+    /* padding: 30px; */
+    display: grid;
+    grid-template-columns: 1;
+    align-items: center;
+    text-align: center;
+    background: var(--grey-color);
+    /* padding-top: 10px; */
+  }
+  .about__sections{
+    margin-bottom: 25px;
+  } 
+
+  .more_info_left{
+    background: var(--grey-color);
+    padding: 50px;
+    padding-left: 8%;
+    margin: 20px;
+    width: 90vw;
+    height: 50vh;
+    text-align: left;
+    float: left;
+    font-size: 12px;
+  }
+
+  .more_info_right{
+    display: none;
+  }
+
+  
+
+
+
+  #recommendations h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  #recommendations h3{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #recommendations p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .recommendations_types {
+    padding: 10px;
+    
+  }
+  .recommendations_types img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    
+  }
+
+} 
+
+
+
+
+@media(min-width: 773px) and (max-width: 1000px){
+
+  body{
+    width: 100vw;
+  }
+  #main-nav .container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    justify-content: flex-start;
+    height: 22vh;
+  }
+
+  #main-nav .container ul{
+    display: none;
+  }
+
+  #About{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    
+  }
+
+  .about{
+    /* padding: 30px; */
+     /* display: grid;
+     grid-template: 50px / auto auto;*/
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: center;
+
+    text-align: center;
+    background: var(--grey-color);
+    /* padding-top: 10px; */
+  }
+  .about__sections{
+    margin-bottom: 45px;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: center; */
+    
+  } 
+
+  .more_info_left{
+    background: var(--grey-color);
+    padding: 50px;
+    padding-left: 8%;
+    margin: 20px;
+    width: 90vw;
+    height: 50vh;
+    text-align: left;
+    float: left;
+    font-size: 12px;
+  }
+
+  .more_info_right{
+    display: none;
+  }
+
+  
+
+
+
+  #recommendations h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  #recommendations h3{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #recommendations p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .recommendations_types_type {
+    padding: 30px;
+    
+  }
+  .recommendations_types img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    
+  }
+
+} 
